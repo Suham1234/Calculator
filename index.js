@@ -4,6 +4,16 @@ const btnAC = document.querySelector('.btn-AC')
 const btnDE = document.querySelector('.btn-DE')
 const equal = document.querySelector('.equal')
 const allButtons = document.querySelectorAll('.operator,.number-button')
+const buttons = document.querySelectorAll('.operator,.number-button,.equal')
+
+buttons.forEach((button)=>{
+  button.addEventListener('touchstart',()=>{
+    button.classList.add('active')
+    setTimeout(() => {
+      button.classList.remove('active')
+    }, 200);
+  })
+})
 
 function disableButtons() {
   allButtons.forEach(button => {
