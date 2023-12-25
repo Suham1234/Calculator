@@ -7,3 +7,16 @@
     height: 80px;
   }
 }
+
+
+@media (hover:hover){
+  button:hover {
+    background: rgba(6, 40, 61, 0.05);
+    color: rgb(60, 239, 6);
+  }
+}
+.active{
+  background: rgba(6, 40, 61, 0.05);
+  color: rgb(60, 239, 6);
+  transition: background 0.15s,color 0.15s;
+}
